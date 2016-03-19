@@ -15,30 +15,31 @@ body {
 
 .banner {
   background-color: #2b3851;
-  padding: 3rem;
-  height: 235px;
-}
-
-.robot {
-  width: 320px;
-  left: 50%;
-  transform: translate(-50%);
+  height: 250px;
+  padding: 4rem;
   position: relative;
 }
 
-.robot-body {
-  width: 320px;
-  position: absolute;
+.robot {
+  bottom: 0;
   left: 50%;
+  position: relative;
   transform: translate(-50%);
+  width: 320px;
+}
+
+.robot-body {
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%);
+  width: 320px;
 }
 
 .robot-brain {
-  width: 46px;
-
-  position: absolute;
   left: 50%;
+  position: absolute;
   transform: translate(-50%);
+  width: 46px;
 }
 
 .robot-head-right,
@@ -47,29 +48,29 @@ body {
 }
 
 .robot-head-left {
+  left: 35px;
   position: absolute;
   top: -37px;
-  left: 35px;
 }
 
 .robot-head-right {
   position: absolute;
-  top: -37px;
   right: 35px;
+  top: -37px;
 }
 
 /** Break Away **/
 
 .robot:hover .robot-head-left {
+  left: 0px;
   position: absolute;
   top: -60px;
-  left: 15px;
 }
 
 .robot:hover .robot-head-right {
   position: absolute;
+  right: 0px;
   top: -60px;
-  right: 15px;
 }
 
 .robot:hover .robot-brain {
